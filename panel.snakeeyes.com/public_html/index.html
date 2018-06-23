@@ -4,6 +4,8 @@
 <head>
     <title>SnakeEyes AI</title>
     <script type="text/javascript" src="./materialize/js/materialize.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="./js/main.js"></script>
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="./materialize/css/materialize.min.css" media="screen,projection" />
@@ -27,6 +29,45 @@
                     </div>
                     <div class="card-action">
                         <a href="#">Reload</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <h3>Stressing Tools</h3>
+            <div class="row">
+                <div class="card white darken-1">
+                    <div class="card-content black-text">
+                        <div class="center-align valign-wrapper">
+                            <span class="center-align card-title">CPU Stressing</span>
+                        </div>
+                        <hr/>
+                        <div>
+                            <p>
+                                Begin a CPU stress test on the service.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-action">
+                        <a onclick="runTest('cpu');" href="#!">Run</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="card white darken-1">
+                    <div class="card-content black-text">
+                        <div class="center-align valign-wrapper">
+                            <span class="center-align card-title">Bring Down</span>
+                        </div>
+                        <hr/>
+                        <div>
+                            <p>
+                                Reports the service as down
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-action">
+                        <a onclick="runTest('down');" href="#!">Run</a>
                     </div>
                 </div>
             </div>
